@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ $# -lt 1 ]
+then
+	echo "No arguments supplied"
+fi
 if [ $# -ge 1 ];
 then
 	echo "$1"
