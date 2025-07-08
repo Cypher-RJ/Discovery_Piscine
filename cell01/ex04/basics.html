@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basics</title>
+	<style>
+		body {
+			background-color: pink;
+		}
+		h1 {
+			font-size: xx-large;
+			color: white;
+			text-align: center;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		.column {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		p {
+			color: black;
+		}
+		.foot{
+			text-align: right;
+			font-family: monospace;
+			font-style: italic;
+			color: white;
+			padding: 0px 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Pog_gers</h1>
+	<div class="row">
+		<div class="column">
+			<img src="https://ordemparanormal.com.br/wp-content/uploads/2021/07/op-logo-300x126.png" style="width: auto;">
+		</div>
+		<div class="column">
+			<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/b51f117c-ea4f-4981-93d0-c5bfe69ee37d-profile_image-150x150.png" style="width: auto;">
+		</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<a href="https://ordemparanormal.com.br/en/home/" style="text-decoration: none;">
+				<p>Visit: Ordem Paranormal</p>
+			</a>
+		</div>
+		<div class="column">
+			<a href="https://jamboeditora.com.br/" style="text-decoration: none;">
+				<p>Visit: Jambo</p>
+			</a>
+		</div>
+	</div>
+	<div style="position: absolute; bottom: 20px; width: 99%;">
+		<hr style="color: white; margin-bottom: 20px;">
+		<div class="foot">
+			© rjesus 2021
+		</div>
+	</div>
+</body>
+</html>
