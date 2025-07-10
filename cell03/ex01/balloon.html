@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ex01</title>
+	<style>
+		body, html {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#balloon {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background: red;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<button id="balloon"></button>
+	</div>
+	<script>
+		const balloon = document.getElementById('balloon')
+		balloon.addEventListener('click', big)
+		function big() {
+			let w = parseInt(window.getComputedStyle(balloon).width)
+			let h = parseInt(window.getComputedStyle(balloon).height)
+			balloon.style.width = w + 10 + "px"
+			balloon.style.height = h + 10 + "px"
+			if (h == 430)
+			{
+				balloon.style.width = "200px"
+				balloon.style.height = "200px"
+			}
+		}
+	</script>
+</body>
+</html>
