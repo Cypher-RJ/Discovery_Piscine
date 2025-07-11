@@ -1,0 +1,57 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 0%;
+}
+
+
+.option1 {
+	display: fixed;
+	background-image: url(../../Downloads/house-symbol-and-home-icon-sign-design-free-png-463100078.png);
+	padding: 16px 24px;
+	border: 20px;
+	border-radius: 20px;
+	justify-content: center;
+	align-content: center;
+}
+
+.option2 {
+	display: flex;
+	background-color: wheat;
+	padding: 16px 24px;
+	border: 20px;
+	border-radius: 20px;
+	justify-content: center;
+	align-content: center;
+}
+
+.option3 {
+	display: flex;
+	background-color: wheat;
+	padding: 16px 24px;
+	border: 20px;
+	border-radius: 20px;
+	justify-content: center;
+	align-content: center;
+}
+
+.option4 {
+	display: flex;
+	background-color: wheat;
+	padding: 16px 24px;
+	border: 20px;
+	border-radius: 20px;
+	justify-content: center;
+	align-content: center;
+}
+
+.option5 {
+	display: flex;
+	background-color: wheat;
+	padding: 16px 24px;
+	border: 20px;
+	border-radius: 20px;
+	justify-content: center;
+	align-content: center;
+}
