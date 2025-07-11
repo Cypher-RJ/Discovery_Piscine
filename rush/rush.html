@@ -4,67 +4,132 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>rush</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>Piscine Discovery Rush</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="rush.css">
+	<!-- Font Awesome for icons -->
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<!-- Sidebar -->
-	<div id="sidebar" style="display:none; position:fixed; top:0; left:0; width:220px; height:100%; background:#222; color:#fff; z-index:1000; padding-top:60px; box-shadow:2px 0 8px rgba(0,0,0,0.2);">
+	<!-- Bootstrap Sidebar Navigation -->
+	<div class="d-none d-md-flex flex-column bg-primary text-white position-fixed h-100" style="width: 160px; top: 0; left: 0; z-index: 1040; padding-top: 80px;">
+		<nav class="nav flex-column w-100 text-left">
+			<a class="nav-link text-white py-2 px-3" href="#home" title="Home"><i class="fas fa-home mr-2"></i>Home</a>
+			<hr class="bg-white my-1">
+			<a class="nav-link text-white py-2 px-3" href="#cv1-profile" title="@rjesus Profile"><i class="fas fa-user mr-2"></i>Profile</a>
+			<a class="nav-link text-white py-2 px-3" href="#cv1-experience" title="@rjesus Experience"><i class="fas fa-briefcase mr-2"></i>Experience</a>
+			<a class="nav-link text-white py-2 px-3" href="#cv1-contact" title="@rjesus Contact"><i class="fas fa-envelope mr-2"></i>Contact</a>
+			<hr class="bg-white my-1">
+			<a class="nav-link text-white py-2 px-3" href="#cv2-profile" title="@anotheruser Profile"><i class="fas fa-user-friends mr-2"></i>Profile</a>
+			<a class="nav-link text-white py-2 px-3" href="#cv2-experience" title="@anotheruser Experience"><i class="fas fa-briefcase mr-2"></i>Experience</a>
+			<a class="nav-link text-white py-2 px-3" href="#cv2-contact" title="@anotheruser Contact"><i class="fas fa-envelope mr-2"></i>Contact</a>
+		</nav>
 	</div>
-	<div class="parallax" id="profile-section">
-		<div class="card">
-			<table class="card-table">
-				<tr>
-					<td colspan="2" class="profile-pic-cell">
-						<img src="https://i.redd.it/00dr9plop5ez.jpg" alt="Profile Picture" class="profile-pic">
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2" class="login-cell">
-						<span class="login">@rjesus</span>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2" class="button-cell">
-						<a href="#parallax2-section" class="contact-link"><button class="contact-btn">Contact</button></a>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<div class="card">
-			<table class="card-table">
-				<tr>
-					<td colspan="2" class="profile-pic-cell">
-						<img src="https://i.redd.it/00dr9plop5ez.jpg" alt="Profile Picture" class="profile-pic">
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2" class="login-cell">
-						<span class="login">@anotheruser</span>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2" class="button-cell">
-						<a href="#parallax3-section" class="contact-link"><button class="contact-btn">Contact</button></a>
-					</td>
-				</tr>
-			</table>
-		</div>
+
+	<div class="main-content" style="margin-left:160px;">
+		<!-- Home Section -->
+		<section id="home" class="parallax" style="padding-top:80px; min-height:100vh;">
+			<div class="container text-center">
+				<h1>Piscine Discovery Rush</h1>
+				<p>Mini showcase site with two CVs. Click below to view each resume.</p>
+				<div class="row justify-content-center">
+					<div class="col-md-4">
+						<a href="#cv1" class="btn btn-primary btn-lg btn-block">@rjesus CV</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#cv2" class="btn btn-secondary btn-lg btn-block">@anotheruser CV</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CV 1 Section -->
+		<section id="cv1" class="parallax2" style="padding-top:80px; min-height:100vh;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 d-flex align-items-center justify-content-center" id="cv1-profile">
+						<img src="https://i.redd.it/00dr9plop5ez.jpg" class="profile-pic"
+							style="max-width:200px; border-radius:50%;">
+					</div>
+					<div class="col-md-8">
+						<h2>Ruben Jesus</h2>
+						<h4>Web Developer & Programming Enthusiast</h4>
+						<hr>
+						<h5 id="cv1-experience">Experience & Skills</h5>
+						<ul>
+							<li>42 Piscine Student with a passion for coding and problem solving</li>
+							<li>Proficient in HTML, CSS, JavaScript, and Bootstrap</li>
+							<li>Experience building responsive web applications and interactive UIs</li>
+							<li>Strong understanding of Git, version control, and collaborative workflows</li>
+							<li>Developed several mini-projects including portfolio sites, games, and utilities</li>
+							<li>Interested in learning React, Node.js, and backend development</li>
+							<li>Enjoys participating in hackathons and coding challenges</li>
+						</ul>
+						<hr>
+						<h5>Projects</h5>
+						<ul>
+							<li>Rush Showcase: Multi-CV web app using Bootstrap and custom CSS</li>
+							<li>Responsive Card UI: Designed and implemented modern card layouts</li>
+							<li>Shell Scripting: Automated file management and system tasks</li>
+						</ul>
+						<hr>
+						<h5 id="cv1-contact">Contact</h5>
+						<a href="mailto:piscine@42.fr" class="btn btn-primary">Email</a>
+						<a href="#home" class="btn btn-outline-secondary">Back to Home</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CV 2 Section -->
+		<section id="cv2" class="parallax3" style="padding-top:80px; min-height:100vh;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 d-flex align-items-center justify-content-center" id="cv2-profile">
+						<img src="https://i.redd.it/00dr9plop5ez.jpg" class="profile-pic"
+							style="max-width:200px; border-radius:50%;">
+					</div>
+					<div class="col-md-8">
+						<h2>Another User</h2>
+						<h4>Software Engineer & Code Explorer</h4>
+						<hr>
+						<h5 id="cv2-experience">Experience & Skills</h5>
+						<ul>
+							<li>42 Piscine Student with a focus on backend and systems programming</li>
+							<li>Skilled in Python, C, Shell Scripting, and algorithmic problem solving</li>
+							<li>Experience with Linux environments, automation, and scripting</li>
+							<li>Built CLI tools and utilities for file management and data processing</li>
+							<li>Interested in DevOps, cloud computing, and scalable architectures</li>
+							<li>Enjoys contributing to open source and learning new technologies</li>
+						</ul>
+						<hr>
+						<h5>Projects</h5>
+						<ul>
+							<li>Shell Automation: Scripts for system monitoring and backups</li>
+							<li>Mini Web Server: Built a simple HTTP server in C</li>
+							<li>Python Data Tools: Utilities for parsing and analyzing datasets</li>
+						</ul>
+						<hr>
+						<h5 id="cv2-contact">Contact</h5>
+						<a href="mailto:piscine@42.fr" class="btn btn-primary">Email</a>
+						<a href="#home" class="btn btn-outline-secondary">Back to Home</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer style="width: 100%; align-content: center; background-color: #007bff;">
+			<hr style="color: #007bff;">
+			<div class="foot">
+				© rjesus 2021
+			</div>
+		</footer>
 	</div>
-	<div class="block" id="team-section">
-		Best Rush Team
-	</div>
-	<div class="parallax2" id="parallax2-section">
-		<img src="" alt="">
-	</div>
-	<div class="block" id="block2-section">
-		Best Rush Team
-	</div>
-	<div class="parallax3" id="parallax3-section">
-		<img src="" alt="">
-	</div>
+	<!-- Optional: Bootstrap JS for navbar toggling -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Font Awesome for icons -->
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
